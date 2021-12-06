@@ -37,33 +37,33 @@ def build_graph():
         figure={
             'data': [
                 {
-                    'x': df['Batch'][:50],
-                    'y': df['Techniques'][:50],
-                    'name': 'Techniques',
+                    'x': df['time'],
+                    'y': df['acc_x'],
+                    'name': 'Accelerometer by X-axis',
                     'marker': {'size': 12}
                 },
                 {
-                    'x': df['Batch'][:50],
-                    'y': df['Workplace'][:50],
-                    'name': 'Workplace',
+                    'x': df['time'],
+                    'y': df['acc_z'],
+                    'name': 'Accelerometer by Y-axis',
                     'marker': {'size': 12}
                 },
                 {
-                    'x': df['Batch'][:50],
-                    'y': df['Garage'][:50],
-                    'name': 'Garage',
+                    'x': df['time'],
+                    'y': df['gyro_x'],
+                    'name': 'Gyroscope by X-axis',
                     'marker': {'size': 12}
                 },
                 {
-                    'x': df['Batch'][:50],
-                    'y': df['Kitchen'][:50],
-                    'name': 'Kitchen',
+                    'x': df['time'],
+                    'y': df['gyro_y'][:50],
+                    'name': 'Gyroscope by Y-axis',
                     'marker': {'size': 12}
                 },
                 {
-                    'x': df['Batch'][:50],
-                    'y': df['Hall'][:50],
-                    'name': 'Hall',
+                    'x': df['time'],
+                    'y': df['gyro_x'],
+                    'name': 'Gyroscope by Z-axis',
                     'marker': {'size': 12}
                 },
             ],
